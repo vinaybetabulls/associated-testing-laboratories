@@ -15,6 +15,8 @@ export type Props = InputProps & {
   onChange?: (e: React.ChangeEvent<any>) => void
   hideError?: boolean
   hideRequiredOptional?: boolean
+  rows?: number
+  multiline?: boolean
 }
 
 const TextFieldWrappper = (props: Props) => {
@@ -65,6 +67,7 @@ const TextField = (props: Props) => {
         }
       : onBlur,
     value,
+    rows,
     ...textInputProps,
   }
 
