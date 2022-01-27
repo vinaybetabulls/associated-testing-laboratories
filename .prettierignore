@@ -1,0 +1,7 @@
+*.d.ts
+*.js
+.next
+**/cdk.out/**
+test-results
+package-lock.json
+
